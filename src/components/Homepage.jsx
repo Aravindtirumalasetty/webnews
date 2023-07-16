@@ -7,7 +7,7 @@ const Homepage = () => {
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=680fdb2b7b284742ae6299b7054b7db3"
+        "http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=680fdb2b7b284742ae6299b7054b7db3"
       )
       .then((res) => {
         console.log(res);
