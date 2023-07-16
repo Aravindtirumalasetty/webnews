@@ -4,7 +4,7 @@ const Homepage = () => {
   return (
     <>
     <div className={`${styles.newscontainer}`}>
-      webnews
+     Hi Aravind! breifing your news
     </div>
     </>
   )
