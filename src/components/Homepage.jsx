@@ -12,7 +12,7 @@ const Homepage = () => {
       .then((res) => {
         console.log(res);
         setNews(res.data.articles);
-      });
+      }).catch((err) => console.log(err));
   }, []);
   return (
     <>
