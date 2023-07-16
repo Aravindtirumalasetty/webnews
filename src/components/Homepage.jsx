@@ -16,32 +16,32 @@ const Homepage = () => {
   }, []);
   return (
     <>
+      <div className={`${styles.header}`}>
+        <h1>Hi! Aravind! here is your brief</h1>
+      </div>
       <div className={`${styles.newscontainer}`}>
         <div className={`${styles.display}`}>
           {news.map((newstopic, index) => {
-            const { title, url, urlToImage ,description} = newstopic;
+            const { title, url, urlToImage, description } = newstopic;
             return (
               <>
                 <article key={index} className={`${styles.eacharticle}`}>
                   <div className={`${styles.picture}`}>
-                  {urlToImage ? (
-                  <img
-                    src={urlToImage}
-                    alt="Dynamic"
-                    
-                  />
-                ) : (
-                  <img
-                    src="/images/noimage.png"
-                    alt="Default"
-                   
-                  />
-                )}
+                    {urlToImage ? (
+                      <img src={urlToImage} alt="Dynamic" />
+                    ) : (
+                      <img src="/images/noimage.png" alt="Default" />
+                    )}
                   </div>
                   <div className={`${styles.details}`}>
                     <h2>{title}</h2>
                     <p>{description}</p>
-                    <a href={url} className={`${styles.view}`} target="_blank" rel="noreferrer">
+                    <a
+                      href={url}
+                      className={`${styles.view}`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       View More
                     </a>
                   </div>
